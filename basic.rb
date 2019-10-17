@@ -5,6 +5,7 @@ CONST = 1
 # CONST = 3 => error
 # puts CONST
 
+
 # String methods
 dummyText = 'Lorem ipsum'
 
