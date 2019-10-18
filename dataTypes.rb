@@ -68,5 +68,6 @@ people = {
 # - Symbol
 # - Array
 # - Range
+# - Regexp
 
 # puts Object.class
