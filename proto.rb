@@ -44,21 +44,6 @@
 #     puts "lain-lain"
 # end
 
-# >>>>> array <<<<<
-# arr = ["satu", 2, "three"]
-# print arr.first + ", #{arr[1]}, " + arr.last + "\n"
-# puts '2 number: ' + arr.take(2).to_s
-# puts 'arr count: ' + arr.count.to_s
-# puts 'arr length: ' + arr.length.to_s
-# arr.push("empat")
-# arr.unshift(0)
-# arr.insert(1, 'nyelip index')
-# puts arr
-# arr.pop
-# arr.shift
-# puts '>>>>>>>'
-# puts arr
-
 # >>>>> looping <<<<<
 # 3.times do
 #   puts "3"
