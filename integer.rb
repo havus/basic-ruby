@@ -4,3 +4,8 @@
 # puts 7 % 7 # -> Int modulo other
 # puts 7 & 5 
 # puts false.class
+# puts 15.divmod(3).to_s  # hasil bagi dan hasil modulus
+# puts (5.5).floor
+# puts (5.5).ceil
+# puts Math::PI
+# puts Math.sqrt(10) # square root

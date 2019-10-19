@@ -34,3 +34,8 @@ data = {
 # ap people[:name]
 # ap people
 # ap ''.methods - Object.methods
+
+
+
+puts Symbol.all_symbols.length                      # => 3896
+puts Symbol.all_symbols.grep(/dummy_method/)

@@ -10,4 +10,41 @@ require "awesome_print"
 #   ap num
 # end
 
-ap 
+# 3.times do
+#   puts "3"
+# end
+# number = 1
+# while number <= 5
+#   puts number
+#   number+=1
+# end
+
+# until number > 5
+#   puts number
+#   number += 1
+# end
+
+# for number in (0..3)
+#   puts number
+# end
+
+# for i in 10.downto(0)
+#   puts i
+# end
+
+# arr = ["hello", "world", "oke"]
+# arr.each do |contain|
+#   puts contain
+# end
+
+# arr.each {
+#   |contain| puts contain
+# }
+
+# (0..2).each do |n|
+#   puts n
+# end
+
+for n in [1,2,3]
+  puts n
+end

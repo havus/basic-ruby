@@ -2,7 +2,7 @@ require "JSON"
 require "awesome_print"
 
 # ARRAY
-animal = ['cat', 'dog', 'rat', 'fish', 'monkey']
+# animal = ['cat', 'dog', 'rat', 'fish', 'monkey']
 
 # ap animal.count
 # ap animal.length
@@ -28,3 +28,26 @@ animal = ['cat', 'dog', 'rat', 'fish', 'monkey']
 # ap animal - ['rat', 'fish', 'monkey'] # cat dog
 # ap [[1,2,3], [4,5,6], 7, [[8,9], 10]].flatten, :multiline => false
 # ap [ 10, 2, 2, 6, 5, 6, 2, 3, 9, 10 ].uniq, :multiline => false
+
+# animal.map do |item|
+#   puts item
+# end
+# puts animal.map(&:chars)
+
+will_sort = [3,2,5,1,4,10,6,7,8,9]
+
+def sort(arr)
+  for i in (0..(arr.count - 1))
+    for j in ((i + 1)..(arr.count - 1))
+      if arr[i] > arr[j]
+        arr[i], arr[j] = arr[j], arr[i]
+      end
+    end
+  end
+  arr
+end
+
+ap sort(will_sort), :multiline => false
+# will_sort.each do |item| 
+#   puts item
+# end

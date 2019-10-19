@@ -12,68 +12,6 @@
 # num2 = gets.chomp.to_i
 # puts "The result => #{num1.to_s + num2.to_s}"
 
-# function and condition
-# "string".class == "string".chars.class
-# false ? (puts 1) : (puts -1) # ternary
-# puts true ? ?7 : '' # 7
-# puts true ? ?7 * 3 : '' # 777
-# puts "string" == "string"
-# (true) && (print "benar "; puts "lagi")
-# (!true) || (print "salah " ; puts "lagi")
-# 5.==(5).&(puts ?5)
-
-# def shout(args)
-#   # print the same result with return and without it
-#   if args.to_i == 10
-#     puts "Ini angka sepuluh"
-#   end
-#   unless args.to_i == 10
-#     puts "Ini bukan angka sepuluh bos"
-#   end
-# end
-# puts shout("10")
-# number = 3
-# case number
-#   when 1 
-#     puts "satu"
-#   when 2 
-#     puts "dua"
-#   when 3 
-#     puts "tiga"
-#   else
-#     puts "lain-lain"
-# end
-
-# >>>>> looping <<<<<
-# 3.times do
-#   puts "3"
-# end
-# number = 1
-# while number <= 5
-#   puts number
-#   number+=1
-# end
-# until number > 5
-#   puts number
-#   number += 1
-# end
-# for number in (0..3)
-#   puts number
-# end
-# for i in 10.downto(0)
-#   puts i
-# end
-# arr = ["hello", "world", "oke"]
-# arr.each do |contain|
-#   puts contain
-# end
-# arr.each {
-#   |contain| puts contain
-# }
-# (0..2).each do |n|
-#   puts n
-# end
-
 # hash, hashes, hashmap, dictionary
 # satu = "satu"
 # example = {
