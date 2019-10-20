@@ -20,3 +20,12 @@ people = {
 ap :key1
 
 # How to destructuring hash?
+
+arr_twin = ["this", "hello", "world", "hello", "okay", "this", "world"]
+# default value on this hash .new(value)
+frequenz = Hash.new(0)
+arr_twin.each do |item|
+  frequenz[item] += 1
+end
+
+puts frequenz

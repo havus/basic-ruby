@@ -34,20 +34,20 @@ require "awesome_print"
 # end
 # puts animal.map(&:chars)
 
-will_sort = [3,2,5,1,4,10,6,7,8,9]
+# will_sort = [3,2,5,1,4,10,6,7,8,9]
 
-def sort(arr)
-  for i in (0..(arr.count - 1))
-    for j in ((i + 1)..(arr.count - 1))
-      if arr[i] > arr[j]
-        arr[i], arr[j] = arr[j], arr[i]
-      end
-    end
-  end
-  arr
-end
+# def sort(arr)
+#   for i in (0..(arr.count - 1))
+#     for j in ((i + 1)..(arr.count - 1))
+#       if arr[i] > arr[j]
+#         arr[i], arr[j] = arr[j], arr[i]
+#       end
+#     end
+#   end
+#   arr
+# end
 
-ap sort(will_sort), :multiline => false
+# ap sort(will_sort), :multiline => false
 # will_sort.each do |item| 
 #   puts item
 # end

@@ -26,19 +26,23 @@
 #     puts "lain-lain"
 # end
 
-def shout(args)
-  # print the same result with return and without it
-  if args == 10
-    puts "Ini angka sepuluh"
-  elsif args == 11
-    puts "Ini angka sebelas"
-  else
-    puts "Ini angka sepuluh atau sebelas"
-  end
+# def shout(args)
+#   # print the same result with return and without it
+#   if args == 10
+#     puts "Ini angka sepuluh"
+#   elsif args == 11
+#     puts "Ini angka sebelas"
+#   else
+#     puts "Ini angka sepuluh atau sebelas"
+#   end
 
-  unless args == 10
-    puts "It's work :)"
-  end
-end
+#   unless args == 10
+#     puts "It's work :)"
+#   end
+# end
 
-puts shout(12)
+# puts shout(12)
+
+# puts 1 <=> 2 # result 1 / -1
+# puts "hello" <=> "world"
+# puts "world" <=> "hello"

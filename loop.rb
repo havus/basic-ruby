@@ -45,6 +45,37 @@ require "awesome_print"
 #   puts n
 # end
 
-for n in [1,2,3]
-  puts n
+# for n in [1,2,3]
+#   puts n
+# end
+
+# counter = 0
+
+# loop do
+#   counter += 1
+#   next if counter.even?;
+#   break if counter >= 10
+#   ap "It's work! #{counter} times"
+# end
+print "Input your sentence here: "
+sentence = gets.chomp
+
+print "Input your forbidden word: "
+forbidden_word = gets.chomp
+
+filtered_sentence = ""
+sentence.split(" ").each_with_index do |word, idx|
+  if word != forbidden_word
+    filtered_sentence += word
+  else
+    for n in word.chars
+      filtered_sentence += "*"
+    end
+  end
+  
+  if idx < sentence.split(" ").length - 1
+    filtered_sentence += " "
+  end
 end
+
+ap filtered_sentence
