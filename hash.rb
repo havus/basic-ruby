@@ -10,6 +10,17 @@ require 'awesome_print'
 # }
 # ap human
 
+# satu = "satu"
+# example = {
+#   satu => "pertama",
+#   "dua" => "kedua"
+# }
+# puts example["satu"]
+# example.each do |key, value|
+#   print key + ' '
+#   puts value
+# end
+
 
 # Shorthand
 

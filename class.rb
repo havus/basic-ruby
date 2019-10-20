@@ -11,12 +11,12 @@ class People
     @age = age
   end
 
-  def age?
+  def age
     @age
   end
 end
 
 # john = People.new(age: 20, first_name: "John", last_name: "Doe")
-# ap john.age?
+# ap john.age
 puts "1".to_f
 # shout(first_name: "John", last_name: "Doe")
