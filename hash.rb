@@ -21,22 +21,50 @@ require 'awesome_print'
 #   puts value
 # end
 
+example = {
+  :john => 20,
+  :selene => 25,
+  :juleha => 15,
+  :steven => 27,
+  :budi => 12
+}
+
+over_twenty = Proc.new do |key, value|
+  value > 20
+end
+
+puts over_twenty
+
+# result = example.select do |key, value|
+#   value > 20
+# end
+# result = example.select &over_twenty
+# ap result
+
+# example.each_key do |key|
+#   puts key
+# end
+# example.each_value do |value|
+#   puts value
+# end
+
+# example.delete(:budi)
+# ap example
+
 
 # Shorthand
 
-people = {
-  key1: "value1",
-  key2: "value2",
-}
-ap :key1
+# people = {
+#   key1: "value1",
+#   key2: "value2",
+# }
+# ap :key1
 
 # How to destructuring hash?
-
-arr_twin = ["this", "hello", "world", "hello", "okay", "this", "world"]
+# arr_twin = ["this", "hello", "world", "hello", "okay", "this", "world"]
 # default value on this hash .new(value)
-frequenz = Hash.new(0)
-arr_twin.each do |item|
-  frequenz[item] += 1
-end
-
-puts frequenz
+# frequenz = Hash.new(0)
+# arr_twin.each do |item|
+#   frequenz[item] += 1
+# end
+# puts frequenz

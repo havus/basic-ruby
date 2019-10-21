@@ -9,3 +9,11 @@
 # puts (5.5).ceil
 # puts Math::PI
 # puts Math.sqrt(10) # square root
+
+# class Integer
+#   def to_b?
+#     !self.zero?
+#   end
+# end
+
+# puts 0.to_b?
