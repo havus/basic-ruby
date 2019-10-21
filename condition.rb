@@ -47,6 +47,11 @@
 # puts "hello" <=> "world"
 # puts "world" <=> "hello"
 
+# example = nil
+# example ||= "hello"
+# example = "the world"
+# example ||= "not work!"
+# puts example
 
 
 
