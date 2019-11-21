@@ -14,17 +14,19 @@
 # false || (print "salah " ; puts "lagi")
 # 5.==(5).&(puts ?5)
 
-# number = 3
-# case number
-#   when 1
-#     puts "satu"
-#   when 2
-#     puts "dua"
-#   when 3
-#     puts "tiga"
-#   else
-#     puts "lain-lain"
-# end
+number = 6
+case number
+  when 1
+    puts "satu"
+  when 2
+    puts "dua"
+  when 3
+    puts "tiga"
+  when (4..10)
+    puts "dibawah 10"
+  else
+    puts "lain-lain"
+end
 
 # def shout(args)
 #   # print the same result with return and without it

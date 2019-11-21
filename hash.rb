@@ -28,12 +28,21 @@ example = {
   :steven => 27,
   :budi => 12
 }
+test = :john
 
+# Proc
 over_twenty = Proc.new do |key, value|
   value > 20
 end
 
-puts over_twenty
+# puts over_twenty
+@enum_status = {
+  0 => 'trial',
+  1 => 'active',
+  2 => 'freeze',
+  3 => 'inactive'
+}
+puts @enum_status[2]
 
 # result = example.select do |key, value|
 #   value > 20

@@ -17,3 +17,5 @@
 # end
 
 # puts 0.to_b?
+
+# puts 0.6e6

@@ -51,3 +51,11 @@ require "awesome_print"
 # will_sort.each do |item| 
 #   puts item
 # end
+
+# people = ['john', 'doe']
+# people2 = ['william', 'doe']
+
+# ap (['doe'] - people).any?
+arr = [1,2,3,4,5] - [4,5,1]
+
+ap arr
