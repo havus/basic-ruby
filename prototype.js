@@ -24,51 +24,51 @@
 
 // console.log(name, city);
 
-const spiralFlatten = (arr) => {
-  const result = [];
-  let step = 'row';
-  let startX = 0;
-  let startY = 1;
-  let stop = false;
+// const spiralFlatten = (arr) => {
+//   const result = [];
+//   let step = 'row';
+//   let startX = 0;
+//   let startY = 1;
+//   let stop = false;
   
-  while (!stop) {
-    if (arr.length < 1) break;
-    if (step === 'row') {
-      if (!startX) {
-        for (let i = 0; i < arr[0].length; i++) {
-          result.push(arr[0][i]);
-        }
-      } else {
-        for (let i = arr[0].length - 1; i >= 0; i--) {
-          result.push(arr[arr.length - 1][i]);
-        }
-      }
+//   while (!stop) {
+//     if (arr.length < 1) break;
+//     if (step === 'row') {
+//       if (!startX) {
+//         for (let i = 0; i < arr[0].length; i++) {
+//           result.push(arr[0][i]);
+//         }
+//       } else {
+//         for (let i = arr[0].length - 1; i >= 0; i--) {
+//           result.push(arr[arr.length - 1][i]);
+//         }
+//       }
 
-      if (startX) arr.pop();
-      if (!startX) arr = arr.slice(1);
+//       if (startX) arr.pop();
+//       if (!startX) arr = arr.slice(1);
 
-      startX = startX ? 0 : 1;
-    } else if (step === 'col') {
-      if (startY) {
-        for (let i = 0; i < arr.length; i++) {
-          result.push(arr[i][arr[i].length - 1]);
-          arr[i].pop();
-        }
-      } else {
-        for (let i = arr.length - 1; i >= 0; i--) {
-          result.push(arr[i][0]);
-          arr[i] = arr[i].slice(1);
-        }
-      }
+//       startX = startX ? 0 : 1;
+//     } else if (step === 'col') {
+//       if (startY) {
+//         for (let i = 0; i < arr.length; i++) {
+//           result.push(arr[i][arr[i].length - 1]);
+//           arr[i].pop();
+//         }
+//       } else {
+//         for (let i = arr.length - 1; i >= 0; i--) {
+//           result.push(arr[i][0]);
+//           arr[i] = arr[i].slice(1);
+//         }
+//       }
       
-      startY = startY ? 0 : 1;
-    }
+//       startY = startY ? 0 : 1;
+//     }
 
-    step = (step === 'row') ? 'col' : 'row';
-  }
+//     step = (step === 'row') ? 'col' : 'row';
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
 // [
 //    12, 34, 21, 32, 78, 12, 57, 2, 
@@ -76,12 +76,51 @@ const spiralFlatten = (arr) => {
 //    78, 30, 42, 47, 90, 11, 37, 76, 3
 // ]
 
-const arr = [
-  [12, 34, 21, 32, 78],
-  [1, 78, 30, 42, 12],
-  [68, 76, 3, 47, 57],
-  [60, 37, 11, 90, 2],
-  [42, 38, 67, 43, 31]
-]
+// const arr = [
+//   [12, 34, 21, 32, 78],
+//   [1, 78, 30, 42, 12],
+//   [68, 76, 3, 47, 57],
+//   [60, 37, 11, 90, 2],
+//   [42, 38, 67, 43, 31]
+// ]
 
-console.log(spiralFlatten(arr));
+// const findMyIndex = ['manggo', 'john', 'doe'];
+// if (findMyIndex.findIndex(item => item === 'johssn')) {
+//   console.log('oke');
+// } else {
+//   console.log('oh no');
+// }
+
+// console.log(spiralFlatten(arr));
+
+
+
+// spread operator multidimensional
+
+// const people = {
+//   data: {
+//     per: [
+//       {
+//         name: 'john',
+//       },
+//       {
+//         name: 'doe',
+//       },
+//       {
+//         name: 'al',
+//       },
+//     ]
+//   }
+// }
+
+// const bekup = {...people};
+// console.log(bekup.data.per);
+//  JSON.parse(JSON.stringify(body.data.attributes)).cart_items;
+
+const currency = (str) => {
+  str = str.replace(/[a-zA-Z]+/, '').replace(/,00/, '').replace(/[.,\s]/g, '');
+  str = str.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+  return `${str},00`;
+}
+
+console.log(currency('Rp250.000,00'));

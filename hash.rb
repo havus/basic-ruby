@@ -1,6 +1,12 @@
 require 'awesome_print'
 # Hash
 
+# More clean code
+# activate: :environment 
+# then
+# :activate => :environment
+
+
 # There are several ways to create hashes in Ruby
 # Literal notation
 

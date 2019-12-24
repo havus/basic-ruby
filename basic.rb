@@ -37,6 +37,24 @@ people = {
   age: 21
 }
 
-puts people[:address] ||= 'tidak ada'
+class Person
+  def name(*args)
+    args.join(' ')
+  end
+
+  def call_name
+    puts send(:name, 'my name is', 'john')
+  end
+end
+
+john = Person.new
+john.call_name
+# puts john.send :name, 'john', 'doe'
+
+# send(people[:name].to_s, ' doe')
+
+# puts people[:address] ||= 'tidak ada'
 # ||= adalah operator kalau tidak ada dia akan return dan declare variable tsb
-puts people[:address]
+# puts people[:address]
+
+# items.map(&:package_items).flatten
