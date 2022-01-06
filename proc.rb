@@ -1,15 +1,51 @@
 require "awesome_print"
 
-# my_proc = Proc.new do |num1, num2|
-#   puts num1 + num2
-# end
-# my_proc.call(10, 15)
+# the difference lambda & proc
+# 1.
+#   my_lambda.call(10) will error, need to full fill the arguments
+#     my_proc.call(10) will run smoothly
+# 2. 
+#   Should work
+#   my_lambda = -> { return 1 }
+#   puts "Lambda result: #{my_lambda.call}"
+#   Should raise exception
+#   my_proc = Proc.new { return 1 }
+#   puts "Proc result: #{my_proc.call}"
+
+my_proc = Proc.new do |num1, num2|
+  puts "#{num1} + #{num2}"
+end
+my_proc.call(10, 15)
 
 # my_lambda = lambda do |num1, num2|
 #   puts num1 + num2
 # end
+my_lambda = ->(num1, num2) { puts "#{num1} + #{num2}" }
 
-# my_lambda.call(10, 15)
+my_lambda.call(10, 15)
+my_lambda.(10, 15)
+my_lambda[10, 15]
+my_lambda.=== 10, 15
+
+puts my_proc.lambda?
+puts my_lambda.lambda?
+
+
+# =============== Closures - start ===============
+
+def call_proc(my_proc)
+  count = 500
+  my_proc.call
+end
+
+count   = 3000
+my_proc = Proc.new { puts count }
+
+puts call_proc(my_proc) # 3000
+
+# =============== Closures - end ===============
+
+
 
 # example = {
 #   :john => 20,
