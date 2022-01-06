@@ -11,4 +11,4 @@ puts return_binding.eval('foo')
 # If you try to print foo directly you will get an error.
 # The reason is that foo was never defined outside of the method.
 # foo = 3000
-puts eval('foo')
+puts eval('foo') # puts foo
